@@ -9,7 +9,7 @@
     tools:ignore="ExtraText">
 
     <TextView
-        android:id="@+id/quantity_text_view"
+        android:id="@+id/quantity_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Quantity"
@@ -20,7 +20,7 @@
     />
 
     <TextView
-        android:id="@+id/quantitycount"
+        android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Zero"
@@ -28,7 +28,7 @@
         android:textSize="16sp"
         android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/quantity_text_view"
+        app:layout_constraintTop_toBottomOf="@id/quantity_view"
     />
 
     <Button
@@ -38,6 +38,7 @@
         android:text="@string/Order"
         android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/quantitycount"
+        app:layout_constraintTop_toBottomOf="@id/quantity_text_view"
+        android:onClick="submitOrder"
         />
 </android.support.constraint.ConstraintLayout>
